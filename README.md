@@ -1,1 +1,3 @@
-# in9car-rentals
+Este repositório é dedicado ao desenvolvimento de um website para a locação de veículos, utilizando o framework Django. Aqui, você encontrará o código-fonte completo do projeto, incluindo modelos, visualizações, templates e arquivos estáticos. O objetivo é fornecer uma plataforma intuitiva e eficiente para que os usuários possam alugar veículos de forma fácil e conveniente.
+
+This repository is dedicated to the development of a website for vehicle rentals using the Django framework. Here, you will find the complete source code of the project, including models, views, templates, and static files. The goal is to provide an intuitive and efficient platform for users to easily and conveniently rent vehicles.
