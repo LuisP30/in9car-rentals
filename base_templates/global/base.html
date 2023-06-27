@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+{% include 'space/partials/head.html' %}
+<title>{% block title %}{% endblock title %} | IN9CAR</title>
+</head>
+<body>
+    {% include 'space/partials/header.html' %}
+    <main class="content-container">
+        {% block content %}{% endblock content %}
+    </main>
+</body>
+</html>
