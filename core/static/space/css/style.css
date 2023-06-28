@@ -7,6 +7,10 @@
     margin: 0;
 
 }
+html,body
+{
+    box-sizing: border-box;
+}
 body
 {
     background-image: url(../../img/fundo.jpg);
@@ -23,6 +27,11 @@ header
     display: flex;
     align-items: center;
     font-family: 'Saira', sans-serif;
+    width: 100vw;
+    position: fixed;
+    flex-direction: row;
+    justify-content: space-evenly;
+    z-index: 9;
 }
 .logotipo
 {
@@ -39,7 +48,7 @@ h1
 }
 nav
 {
-    margin-left: 10%;
+    margin-left: 12%;
     color: white;
     display: flex;
     text-decoration: none;
@@ -55,7 +64,7 @@ ul
 {
     align-items: center;
     display: flex;
-    margin-left: 15%;
+    margin-left: 20%;
     gap: 20px;
 }
 .box-cadastro
