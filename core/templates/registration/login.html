@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+ <title>LOGIN</title>
+</head>
+<body>
+    <h2>Página de Login</h2>
+    <form method="post">
+    
+    {% csrf_token %}
+    
+    <p>Usuário: {{ form.username }}</p>
+    <p>Senha: {{ form.password }}</p>
+    
+    <p><input type="submit" value="Autenticar" /></p>
+    </form>
+    
+</body>
+</html>
