@@ -51,7 +51,7 @@ main
     width: 80%;
     height: 100%; 
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 .reserve-details h2
 {
@@ -69,11 +69,25 @@ main
 {
     background-color: white;
     padding: 2%;
+    cursor: pointer;
+    user-select: none;
     border-radius: 7px;
     width: 100%;
-    height: 90%;
+    height: 85%;
+    text-align: center;
+    font-size: medium;
+    color: gray;
 }
+.card figure
+{
+    border-bottom: 1px solid rgba(201, 201, 201, 0.829);
 
+}
+.card p
+{
+    position: relative;
+    bottom: 5%;
+}
 /*Configurações de cabeçalho*/
 header
 {
@@ -84,17 +98,20 @@ header
     align-items: center;
     font-family: 'Saira', sans-serif;
     width: 100%;
+    height: 12%;
     position: fixed;
     z-index: 9;
     white-space: nowrap;
 }
 .logotipo
 {
-    display: flex;
+    display: grid;
+    flex-direction: column;
     position: relative;
     align-items: center;
-    left: 2%;
-    gap: 5px;
+    justify-content: center;
+    left: 4%;
+
 }
 
 h1
@@ -106,7 +123,7 @@ nav
 {
     align-items: center;
     position: relative;
-    right: 1%;
+    left: 1%;
     margin: auto;
     color: white;
     display: flex;
