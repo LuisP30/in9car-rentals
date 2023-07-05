@@ -11,6 +11,7 @@ html,body
 {
     box-sizing: border-box;
     font-family: 'Atkinson Hyperlegible', sans-serif;
+    height: 100%;
 }
 body
 {
@@ -18,7 +19,6 @@ body
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     width: 100%;
     background-position: center;
 }
@@ -30,8 +30,10 @@ main
     justify-content: center;
     align-items: center;
 }
-/*Conteúdo da página principal*/
-/*Div container que está com a div reserve-details e box-cards*/
+/*PÁGINA PRINCIPAL*/
+/*reserve-container possui dois elementos: reserve-details e box-cards
+- reserve-details responsável por abrigar inputs
+- box-cards responsável por abrigar os cards.*/
 .reserve-container
 {
     display: flex;
@@ -48,44 +50,47 @@ main
 {
     display: flex;
     background-color: white;
+    padding: 2%;
     width: 80%;
     height: 100%; 
     border-radius: 10px;
-    margin-top: 20%;
+    margin-top: 12%;
 }
-.reserve-details h2
-{
-    margin: 0 auto;
-}
-/*div pai dos cards*/
+
+/*ESTILIZANDO CARDS*/
 .box-cards
 {
     display: flex;
-    width: 80%;
+    width: 83.5%;
     height: 65%;
-    gap: 4%;
+    gap: 3.5%;
 }
 .card
 {
     background-color: white;
     padding: 2%;
+    pointer-events: none;
     cursor: pointer;
     user-select: none;
     border-radius: 7px;
     width: 100%;
-    height: 85%;
+    height: 75%;
     text-align: center;
     font-size: medium;
     color: gray;
 }
 .card figure
 {
+    height: 45%;
+}
+.header-card
+{
     border-bottom: 1px solid rgba(201, 201, 201, 0.829);
 }
-.card p
+.card-text
 {
     position: relative;
-    bottom: 5%;
+    top: 3%;
 }
 /*Configurações de cabeçalho*/
 header

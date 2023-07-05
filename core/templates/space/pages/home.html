@@ -6,33 +6,43 @@
 <!--Existe uma div container no HTML base-->
 <div class="reserve-container">
         <div class="reserve-details">
-
+            <form action="">
+                <input type="date">
+            </form>
         </div>
         <div class="box-cards">
             <div class="card">
                 <figure>
-                    <img src="static/img/cards/card-car.png" alt="" width="105%" height="145%">
+                    <img src="static/img/cards/card-car.png" alt="" width="95%" height="95%">
+                </figure>
+                <div class="header-card">
                     <h2>Carros Urbanos</h2>
-                </figure>
-                <br>
-                <p>Carros urbanos, compactos e eficientes em termos de combustível. Experimente a nova era da condução urbana.</p>
+                </div>
+                <div class="card-text">
+                    <p>Carros urbanos, compactos e eficientes em termos de combustível. Experimente a nova era da condução urbana.</p>
+                </div>
             </div>
             <div class="card">
                 <figure>
-                    <img src="static/img/cards/card-moto.png" alt="" width="95%" height="105%">
+                    <img src="static/img/cards/card-moto.png" alt="" width="85%" height="95%">
+                </figure>
+                <div class="header-card">
                     <h2>2 rodas</h2>
-                </figure>
-                <br>
-                <p>Desfrute da liberdade de pilotar uma moto de qualidade e aproveite cada momento da sua jornada.</p>
+                </div>
+                <div class="card-text">
+                    <p>Desfrute da liberdade de pilotar uma moto de qualidade e aproveite cada momento da sua jornada.</p>
+                </div>
             </div>
             <div class="card">
                 <figure>
-                    <img src="static/img/cards/real-brasileiro.png" alt="" width="45%" height="65%">
-                    <h2>Melhor Preço</h2>
+                    <img src="static/img/cards/locacao.png" alt="" width="95%" height="105%">
                 </figure>
-                <br>
-                <p>Na nossa plataforma de locação de veículos, <br>você encontrará os melhores preços do mercado.</p>
+                <div class="header-card">
+                    <h2>Entrega e retirada</h2>
+                </div>
+                <div class="card-text">
+                    <p>Oferecemos a comodidade de entregar e receber o veículo no local de sua escolha, como aeroportos, hotéis ou residências.</p>
+                </div>
             </div>
-        </div>
 </div>
 {% endblock content %}
