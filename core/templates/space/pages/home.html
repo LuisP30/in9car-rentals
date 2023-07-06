@@ -3,13 +3,41 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
-<!--Existe uma div container no HTML base-->
 <div class="reserve-container">
         <div class="reserve-details">
             <form action="">
-                <div class="tipo-veiculo">
-                    <button>Moto</button>
-                    <button>Carro</button>
+                <div class="radios-type">
+                    <p>Que tipo de veículo está procurando?</p> 
+                        <div class="radio-veiculo">
+                            <input type="radio" name="tipo-veiculo" id="carro" value="C" required/>
+                            <label for="carro">Carro</label>
+                        </div>
+                        <div class="radio-veiculo">
+                            <input type="radio" name="tipo-veiculo" id="moto" value="M" required/>
+                            <label for="moto">Moto</label>
+                        </div>
+                </div>
+                <div class="local-rental">
+                    <label for="cidade">Selecione o local de retirada do veículo</label>
+                    <select name="cidade" id="cidade">
+                        <option value="Canguaretama">Canguaretama</option>
+                        <option value="Goianinha">Goianinha</option>
+                        <option value="Montanhas">Montanhas</option>
+                        <option value="Pipa">Pipa</option>
+                        <option value="Natal">Parnamirim</option>
+                        <option value="Natal">Natal</option>
+                        <option value="Natal">Ceará-Mirim</option>
+                    </select>
+                    <label for="cidade">Selecione o local de devolução do veículo</label>
+                    <select name="cidade" id="cidade">
+                        <option value="Canguaretama">Canguaretama</option>
+                        <option value="Goianinha">Goianinha</option>
+                        <option value="Montanhas">Montanhas</option>
+                        <option value="Pipa">Pipa</option>
+                        <option value="Natal">Parnamirim</option>
+                        <option value="Natal">Natal</option>
+                        <option value="Natal">Ceará-Mirim</option>
+                    </select>
                 </div>
             </form>
         </div>
