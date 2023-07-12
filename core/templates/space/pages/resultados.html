@@ -1,0 +1,7 @@
+{% extends 'global/base.html' %}
+{% block title %}{% endblock title %}
+{% block content %}
+  {% for veiculo in veiculos %}
+    {% include 'space/partials/veiculo.html' %}      
+  {% endfor %}
+{% endblock content %}

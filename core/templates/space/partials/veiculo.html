@@ -1,0 +1,123 @@
+<div class="filtros">
+    <div class="filtros-log">
+        <h2>Filtros</h2>
+    </div>
+    <fieldset>
+        <legend>Marca:</legend>
+        <div>
+          <input type="checkbox" id="volkswagen" name="volkswagen" checked>
+          <label for="scales">Volkswagen</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="chevrolet" name="chevrolet">
+          <label for="horns">Chevrolet</label>
+        </div>
+        <div>
+            <input type="checkbox" id="BMW" name="BMW">
+            <label for="horns">BMW</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Cambio:</legend>
+        <div>
+          <input type="checkbox" id="manual" name="manual" checked>
+          <label for="scales">Manual</label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="automático" name="automático">
+          <label for="horns">Automático</label>
+        </div>
+    </fieldset>
+    <fieldset>
+      <legend>Cores:</legend>
+      <div>
+        <input type="checkbox" id="azul" name="azul" checked>
+        <label for="scales">Azul</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="ppreto" name="preto">
+        <label for="horns">Preto</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="branco" name="branco">
+        <label for="horns">Branco</label>
+      </div>
+  </fieldset>
+</div>
+<div class="container">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="card swiper-slide">
+            <div class="card-img">
+                <img src="imgs/download.jpg" alt="card image">
+            </div>
+
+            <div class="card-content">
+                <span class="name">White Land Rover</span>
+                <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
+                <h3>$110/dia</h3>
+                <button class="button"> Saiba mais</button>
+            </div>
+          </div>
+  
+          <div class="card swiper-slide">
+            <div class="card-img">
+                <img src="imgs/download.jpg" alt="card image">
+            </div>
+
+            <div class="card-content">
+                <span class="name">White Land Rover</span>
+                <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
+                <h3>$110/dia</h3>
+                <button class="button"> Saiba mais</button>
+            </div>
+          </div>
+  
+          <div class="card swiper-slide">
+            <div class="card-img">
+                <img src="imgs/download.jpg" alt="card image">
+            </div>
+
+            <div class="card-content">
+                <span class="name">White Land Rover</span>
+                <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
+                <h3>$110/dia</h3>
+                <button class="button"> Saiba mais</button>
+            </div>
+          </div>
+  
+          <div class="card swiper-slide">
+            <div class="card-img">
+                <img src="imgs/download.jpg" alt="card image">
+            </div>
+
+            <div class="card-content">
+                <span class="name">White Land Rover</span>
+                <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
+                <h3>$110/dia</h3>
+                <button class="button"> Saiba mais</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+</script>
