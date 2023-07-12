@@ -1,19 +1,28 @@
+{% extends 'global/base.html' %}
+{% block title %}Home{% endblock title %}
+
 <!doctype html>
 <html>
 <head>
- <title>LOGIN</title>
+<style>
+    div
+    {
+        background-color: white;
+    }
+</style>
 </head>
 <body>
-    <h2>Página de Login</h2>
-    <form method="post">
+    <div>
+        <h2>Página de Login</h2>
+        <form method="post">
     
-    {% csrf_token %}
+        {% csrf_token %}
     
-    <p>Usuário: {{ form.username }}</p>
-    <p>Senha: {{ form.password }}</p>
+        <p>Usuário: {{ form.username }}</p>
+        <p>Senha: {{ form.password }}</p>
     
-    <p><input type="submit" value="Autenticar" /></p>
-    </form>
-    
+        <p><input type="submit" value="Autenticar" /></p>
+        </form>
+    </div>
 </body>
 </html>
