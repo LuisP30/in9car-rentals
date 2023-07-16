@@ -1,21 +1,27 @@
 <header>
-    <div class="logotipo">
-        <img src="static/img/carro.png" alt="Logotipo do site" width="65px" height="65px">
-        <h1>IN9CAR</h1>
-    </div>
+    <a href="{% url 'core:home' %}">    
+        <div class="logotipo">
+            <img src="static/img/carro.png" alt="Logotipo do site" width="65px" height="65px">
+            <h1>IN9CAR</h1>
+        </div>
+    </a>
     <nav>
         <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="{% url 'core:home' %}">Home</a></li>
             <li><a href="">Minhas reservas</a></li>
             <li><a href="">Suporte</a></li>
         </ul>
     </nav>
     <div class="box-user">
+    <a href="">    
         <div>
-            <a href="{% url 'login' %}">Sign in</a>
+            Sign in
         </div>
+    </a>
+    <a href="">
         <div class="box-cadastro">
-            <a href="">Sign Up</a>
+            Sign Up
         </div>
+    </a>
     </div>
 </header>
