@@ -2,6 +2,75 @@
 {% block title %}Resultados{% endblock title %}
 {% block interno %}
 <!--CSS Interno-->
+<style type="text/css">
+  
+.swiper-wrapper{
+    width: 100%;
+    height: 35em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.card{
+    width: 20em;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 1em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 2em 1em;
+    margin: 0 1em;
+}
+
+.card-img{
+    width: 20em;
+    height: 15em;
+    margin-top: -32px;
+    
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+.card-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+    color: #333;
+    padding: 10px;
+}
+.description{
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 1em 0;
+    color: #707070;
+    
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #000000;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #265DF2;
+}
+</style>
 {% endblock interno %}
 {% block content %}
   <div class="container">
@@ -9,6 +78,53 @@
 
     </div>
     <div class="results">
+      <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="card-img">
+                    <img src="static/img/cars/m3-competition.png" alt="card image">
+                </div>
+
+                <div class="card-content">
+                    <span class="name">White Land Rover</span>
+                    <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
+                    <button class="button"> Mostrar</button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-img">
+                  <img src="static/img/cars/onix-at-2023.png" alt="card image">
+                </div>
+
+                <div class="card-content">
+                    <span class="name">White Land Rover</span>
+                    <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
+                    <button class="button"> Mostrar</button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-img">
+                  <img src="static/img/cars/virtus-tsi-2023.png" alt="card image">
+                </div>
+
+                <div class="card-content">
+                    <span class="name">White Land Rover</span>
+                    <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
+                    <button class="button"> Mostrar</button>
+                </div>
+            </div>
+
+           
+
+            
+
+            
+
+
+        </div>
+      </section>
       
     </div>
   </div>
