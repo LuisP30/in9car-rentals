@@ -1,23 +1,21 @@
-from distutils.command.upload import upload
 from django.db import models
-from django.contrib.auth.models import User
+
 
 class Veiculo(models.Model):
-    MANUAL = 'M'
-    AUTOMATICO = 'A'
-    cambio_veiculo_choices = (
-        (MANUAL, 'Manual'),
-        (AUTOMATICO, 'Automatico'),
-    )
+    class cambioVeiculo(models.TextChoices):
+        MANUAL = 'M',
+        AUTOMATICO = 'A',
 
     modelo = models.CharField(max_length=45)
     marca = models.CharField(max_length=15)
     placa = models.CharField(max_length=7)
     renavam = models.CharField(max_length=20)
-    capacidade = models.IntegerField()
+    capacidade = models.PositiveIntegerField()
     combustivel = models.CharField(max_length=45)
     potencia = models.CharField(max_length=45)
     cor = models.CharField(max_length=12)
     ano = models.CharField(max_length=4)
     disponivel = models.BooleanField(default=False)
     valor = models.DecimalField(max_digits=5, decimal_places=2)
+    cambio = models.CharField(max_length=1, choices=cambioVeiculo.choices)
+    cover = models.ImageField(upload_to='core/covers/%Y/%m/%d/', blank=False)

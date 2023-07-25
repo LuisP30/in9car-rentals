@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Veiculo
+
+
+class VeiculoAdmin(admin.ModelAdmin):
+    ...
+
+
+admin.site.register(Veiculo, VeiculoAdmin)
