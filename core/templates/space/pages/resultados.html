@@ -70,12 +70,88 @@
 .button:hover{
     background: #265DF2;
 }
+.filter{
+    width: 20vw;
+    height: 63vh;
+    border: 2px, black;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -15px;
+}
+.filtros-log{
+    margin: 20px;
+}
 </style>
 {% endblock interno %}
 {% block content %}
   <div class="container">
     <div class="filter">
+        <div class="filtros-log">
+            <h2>Filtros</h2>
+        </div>
+        <fieldset>
+            <legend>Marca:</legend>
+            <div>
+              <input type="checkbox" id="volkswagen" name="volkswagen" checked>
+              <label for="scales">Volkswagen</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="chevrolet" name="chevrolet">
+              <label for="horns">Chevrolet</label>
+            </div>
+            <div>
+                <input type="checkbox" id="BMW" name="BMW">
+                <label for="horns">BMW</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Câmbio:</legend>
+            <div>
+              <input type="checkbox" id="manual" name="manual" checked>
+              <label for="scales">Manual</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="automático" name="automático">
+              <label for="horns">Automático</label>
+            </div>
 
+        </fieldset>
+        <fieldset>
+            <legend>Preço:</legend>
+            <div>
+              <input type="checkbox" id="minimo" name="minimo" checked>
+              <label for="scales">Min</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="maximo" name="maximo">
+              <label for="horns">Máx</label>
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Cor:</legend>
+            <div>
+              <input type="checkbox" id="preto" name="preto" checked>
+              <label for="scales">Preto</label>
+            </div>
+        
+            <div>
+              <input type="checkbox" id="azul" name="azul">
+              <label for="horns">Azul</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="vermelho" name="vermelho">
+                <label for="horns">Vermelho</label>
+              </div>
+
+        </fieldset>
     </div>
     <div class="results">
       <section class="swiper mySwiper">
@@ -88,7 +164,8 @@
                 <div class="card-content">
                     <span class="name">White Land Rover</span>
                     <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
-                    <button class="button"> Mostrar</button>
+                    <h2>$123/Dia</h2>
+                    <button class="button"> Saiba mais</button>
                 </div>
             </div>
 
@@ -100,7 +177,8 @@
                 <div class="card-content">
                     <span class="name">White Land Rover</span>
                     <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
-                    <button class="button"> Mostrar</button>
+                    <h2>$130/Dia</h2>
+                    <button class="button"> Saiba mais</button>
                 </div>
             </div>
 
@@ -112,7 +190,8 @@
                 <div class="card-content">
                     <span class="name">White Land Rover</span>
                     <p class="description"> Combinando habilidades incomparáveis com um design sofisticado, esse veículo é perfeito para explorar novos horizontes. </p>
-                    <button class="button"> Mostrar</button>
+                    <h2>$110/Dia</h2>
+                    <button class="button"> Saiba mais</button>
                 </div>
             </div>
 
