@@ -1,25 +1,167 @@
 {% extends 'global/base.html' %}
 {% block title %}Detalhes{% endblock title %}
+{% block interno %}
+<!--CSS Interno-->
+<style type="text/css">
+/*Caixa Central*/
+.detalhes-container{
+    width: 75%;
+    height: 75%;
+    display: flex;
+    gap: 25px;
+}
+/*Caixa Esquerda*/
+.detalhes-veiculo{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.detalhes-reserva{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detalhes-reserva > h2{
+    margin: 15px;
+}
+.card-img{
+    margin-top: -32px;
+}
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
+.desc{
+    width: 80%;
+}
+.descrição{
+    display: flex;
+    margin: 25px;
+    padding: 10px;
+    gap: 10px;
+    border-bottom: 1px solid  rgb(206, 206, 206);
+    font-size: 25px;
+    justify-content: center;
+}
+.centro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.centro-block{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+}
+.black{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 2%;
+}
+/*Total*/
+.card-baixo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 150px;
+}
+.card-total{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border: 2px dotted black;
+    border-radius: 4%;
+}
+.card-total > p{
+    border-right: 1px solid  rgb(32, 29, 29);
+    padding-right: 10px;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 14px;
+    background-color: #000000;
+    border-radius: 6px;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #265DF2;
+}
+
+</style>
+{% endblock interno %}
 {% block content %}
 
     <div class="detalhes-container">
         <div class="detalhes-veiculo">
-            <img src="" alt="">
-            <h2></h2>
-            <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+            <div class="card-img"> <img src="static/img/cars/m3-competition.png" alt="card image"> </div>
+            <h2>White BMW</h2>
+            <div class="desc">
+                <div class="descrição">
+                    <i class="fa-solid fa-snowflake" style="color: #006eff;"></i>
+                    <p>Automático</p>
+                </div>
+                <div class="descrição">
+                    <i class="fas fa-user" style="color: #006eff;"></i>
+                    <p>5 Pessoas</p>
+                </div>
+                <div class="descrição">
+                    <i class="fa-solid fa-snowflake" style="color: #006eff;"></i>
+                    <p>Ar Condicionado</p>
+                </div>
+                <div class="descrição">
+                    <i class="fas fa-user" style="color: #006eff;"></i>
+                    <p>Air Bag</p>
+                </div>
             </div>
         </div>
         <div class="detalhes-reserva">
-            <h2></h2>
-            <div>
-                <div></div>
-                <div></div>
+            <h2>Resumo da Reserva</h2>
+            <div class="centro">
+                <div class="centro-block">
+                    <div class="black"><h3>Retirada</h3> </div>
+                    <p><strong> 30 de Junho de 2023 às 08:00</strong></p>
+                    <p> Aeroporto Internac - Natal</p>
+                </div>
+                <div class="centro-block">
+                    <div class="black"><h3>Devolução</h3> </div>
+                    <p><strong> 30 de Junho de 2023 às 08:00</strong></p>
+                    <p> Aeroporto Internac - Natal</p>
+                </div>
             </div>
-            <div class="protecao"></div>
+            <div class="card-baixo"> 
+                <div class="card-total">
+                    <p>Diaria<br> Total 1 x R$ 130,00</p>
+                    <p>Proteção do Carro<br> 1 diaria x R$ 29,90</p>
+                    <h3>Total:<br> R$ 159,90</h3>
+                </div>
+                <button class="button"> Confirmar </button>
+            </div>
         </div>
     </div>
 
