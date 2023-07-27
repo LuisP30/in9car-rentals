@@ -7,7 +7,7 @@ def home(request):
 
 
 def resultados(request):
-    veiculos = Veiculo.objects.filter(disponivel=True).order_by('-id').get()
+    veiculos = Veiculo.objects.filter(disponivel=True).order_by('-id')
     return render(request, 'space/pages/resultados.html', context={
         'veiculos': veiculos,
     })
