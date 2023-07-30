@@ -143,3 +143,10 @@ footer h2
     display: flex;
     justify-content: center;
 }
+@media screen and (max-width: 1056px)
+{
+    .card h2{
+        font-size: 2px;
+    }
+    
+}
