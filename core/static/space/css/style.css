@@ -123,6 +123,20 @@ form
     display: grid;
     width: 25%;
 }
+.botao
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 25%;
+}
+.botao button
+{
+    position: relative;
+    top: 45%;
+    width: 15%;
+    height: 40%;
+}
 /*div genérica*/
 .times-loca input, select option
 {

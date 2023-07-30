@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Veiculo',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')), # noqa
                 ('modelo', models.CharField(max_length=45)),
                 ('marca', models.CharField(max_length=15)),
                 ('placa', models.CharField(max_length=7)),
@@ -26,8 +26,8 @@ class Migration(migrations.Migration):
                 ('ano', models.CharField(max_length=4)),
                 ('disponivel', models.BooleanField(default=False)),
                 ('valor', models.DecimalField(decimal_places=2, max_digits=5)),
-                ('cambio', models.CharField(choices=[('M', 'Manual'), ('A', 'Automatico')], max_length=1)),
-                ('cover', models.ImageField(upload_to='core/covers/%Y/%m/%d/')),
+                ('cambio', models.CharField(choices=[('M', 'Manual'), ('A', 'Automático')], max_length=1)), # noqa
+                ('cover', models.ImageField(upload_to='core/covers/%Y/%m/%d/')), # noqa
             ],
         ),
     ]
