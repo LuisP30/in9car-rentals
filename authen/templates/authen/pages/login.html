@@ -10,6 +10,16 @@
   {
     height: 10%;
     text-align:center ;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin: 20px;
+    height:  30px;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+   
   }
   .grande
   {
@@ -21,41 +31,46 @@
   }
   .reserve-container
   {
+    width: 700px;
     background-color: rgba(12, 12, 17, 0.338);
+    display: flex;
     transform: scale(0.95) ;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    
   }
   .inline-form
   {
-    margin-left:80%;
+    margin-top:70px;
     text-align: center;
     transform: scale3d(1.5);
     height: 4cm;
+    font-size: 20px;
+    justify-content: center;
   }
   .topo
   {
     font-size: 2cm;
   }
-  form
-  {
-    margin-left: 50%;
-  }
+ 
 
 </style>
 {% endblock interno %}
 {% block content %}
 
-  <div class="reserve-container">
+ <center><div class="reserve-container">
     <h2 class="topo">Olá</h2>
     {% if request.user.is_authenticated %}
-      <p class="grande">
+       <p class="grande">
           Você está logado como
           {{ request.user.username }}.
           <form class="inline-form" action="{% url 'authen:logout' %}" method="POST">
             {% csrf_token %}
             <input type="hidden" value="{{ request.user.username }}" name="username">
             <button class="plaintext-button" type="submit"> <p class="grande2">Clique aqui para sair</p></button>
-          </form> </p>
+          </form> </p></center>
 
     {% endif %}
     <form action="{{ form_action }}" method="POST"> {% csrf_token %}

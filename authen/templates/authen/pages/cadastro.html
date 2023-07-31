@@ -1,14 +1,59 @@
 {% extends 'global/base.html' %}
 {% block title %}Cadastro{% endblock title %}
 {% block content %}
+<style>
+.cadastro-content
+{
+    margin-top: 200px;
+    background-color: rgba(12, 12, 17, 0.338);
+    height:700px;
+    flex-direction:column;
+    width: 400px;
+    border-radius: 8px;
+}
+.form-content
+{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.509);
+}
+.grande
+{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+input
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height:  30px;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    align-items: center;
+}
+.enviar
+{
+    width: 100px;
+    align-items: center;
+}
+
+</style>
 <div class="cadastro-content">
-    <h2>Cadastre-se</h2>
+    <center><h2 class="grande">CADASTRE-SE</h2>
+        <hr>
     <div class="form-content">
-    <form action="{{form_action}}" method="POST"> 
+    <form class="form-content"  action="{{form_action}}" method="POST"> 
         {% csrf_token %}
         {{ form }}
-        <input type="submit">
+        <input class="enviar" type="submit">
     </form>
-    </div>
+    </div></center>
 </div>
 {% endblock content %}
