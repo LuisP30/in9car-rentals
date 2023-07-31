@@ -1,0 +1,14 @@
+{% extends 'global/base.html' %}
+{% block title %}Cadastro{% endblock title %}
+{% block content %}
+<div class="cadastro-content">
+    <h2>Cadastre-se</h2>
+    <div class="form-content">
+    <form action="{{form_action}}" method="POST"> 
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit">
+    </form>
+    </div>
+</div>
+{% endblock content %}

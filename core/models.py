@@ -30,3 +30,8 @@ class Veiculo(models.Model):
 
     def __str__(self):
         return self.marca + ' ' + self.modelo
+
+    class Meta:
+        db_table = "Veiculo"
+        verbose_name = "Veiculos"
+        verbose_name_plural = "Veiculos"

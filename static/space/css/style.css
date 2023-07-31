@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
-
 *
 {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 html,body
 {
@@ -72,6 +69,7 @@ form
     display: flex;
     flex-direction: column;
 }
+
 .local-rental
 {
     width: 60%;
@@ -91,7 +89,6 @@ form
 }
 .times-loca label
 {
-    width: 100%;
     text-align: center;
 }
 .tempo-retirada
@@ -125,6 +122,20 @@ form
 {
     display: grid;
     width: 25%;
+}
+.botao
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 25%;
+}
+.botao button
+{
+    position: relative;
+    top: 45%;
+    width: 15%;
+    height: 40%;
 }
 /*div genérica*/
 .times-loca input, select option
@@ -165,4 +176,34 @@ form
 {
     position: relative;
     top: 3%;
+}
+/*PÁGINA DE RESULTADOS*/
+.container
+{
+    display: flex;
+    position: relative;
+    left:2%;
+    width: 80%;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+    margin-top: 20%;
+}
+.filter
+{
+    background-color: white;
+    width: 30%;
+    height: 70%;
+    border-radius: 10px;
+    position: relative;
+    bottom: 15%;
+}
+.results
+{
+    width: 85%;
+    height: 70%;
+    border-radius: 10px;
+    position: relative;
+    bottom: 15%;
 }

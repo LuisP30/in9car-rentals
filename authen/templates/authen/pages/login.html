@@ -1,0 +1,36 @@
+{% extends 'global/base.html' %}
+{% block title %}Login{% endblock title %}
+{% block interno %}
+<style type="text/css">
+  body
+  {
+    color: white;
+  }
+  input
+  {
+    height: 3%;
+  }
+
+</style>
+{% endblock interno %}
+{% block content %}
+
+  <div class="main-content center container">
+    <h2>Login</h2>
+    {% if request.user.is_authenticated %}
+      <p>
+          Você está logado com
+          {{ request.user.username }}.
+          <form class="inline-form" action="{% url 'authen:logout' %}" method="POST">
+            {% csrf_token %}
+            <input type="hidden" value="{{ request.user.username }}" name="username">
+            <button class="plaintext-button" type="submit">Clique aqui</button>
+          </form> para sair
+      </p>
+    {% endif %}
+    <form action="{{ form_action }}" method="POST"> {% csrf_token %}
+        {{ form }}
+        <input type="submit">
+    </form>
+  </div>
+{% endblock content %}
