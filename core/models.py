@@ -35,4 +35,3 @@ class Veiculo(models.Model):
         db_table = "Veiculo"
         verbose_name = "Veiculos"
         verbose_name_plural = "Veiculos"
-        unique_together = ['renavam', 'placa']
